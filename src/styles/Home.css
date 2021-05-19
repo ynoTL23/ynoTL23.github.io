@@ -1,0 +1,19 @@
+.home-wrapper {
+  font-size: 2rem;
+}
+
+#hand {
+  display: inline-block;
+  animation: rotation 1.2s infinite linear;
+  transform: rotate(-10deg);
+  transform-origin: 70% 75%;
+}
+
+@keyframes rotation {
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}

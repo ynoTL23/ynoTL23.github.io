@@ -10,7 +10,8 @@
 }
 
 .bounds-container .line {
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   background: #00aeef;
 }
 
@@ -42,7 +43,7 @@
   height: 100%;
 }
 
-.wrapper {
+.content-wrapper {
   display: grid;
   place-items: center;
   height: 100vh;
