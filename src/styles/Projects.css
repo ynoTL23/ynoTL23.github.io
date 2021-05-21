@@ -1,0 +1,19 @@
+.projects-container {
+  margin-top: 10vh;
+}
+
+.projects-container .projects-header {
+  margin-bottom: 5%;
+}
+
+.projects-container .projects-list {
+  margin-bottom: 25%;
+  width: 50vw;
+  max-width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: auto;
+  align-content: start;
+}
