@@ -1,0 +1,23 @@
+[
+  {
+    "projectTitle": "Sticky Notes",
+    "projectDescription": "Sticky Notes is a public bulletin board where anyone can post something for everyone to see. Users may also choose to customize their notes via the interactive menus.",
+    "projectUrl": "https://github.com/ynoTL23/cuny2x-sticky-note-final-project",
+    "projectImage": "/assets/images/sticky-notes-demo.gif",
+    "projectTechStack": ["React", "Node", "ExpressJS", "SQL"]
+  },
+  {
+    "projectTitle": "NewsFlash",
+    "projectDescription": "NewsFlash is an Android app that offers an aggregation of many news outlets, allowing the user to view top headlines of the day or perform searches for specific headlines. Users may also save articles using the “favorites” feature or share them amongst friends.",
+    "projectUrl": "https://github.com/ynoTL23/NewsFlash",
+    "projectImage": "/assets/images/NewsFlash-logo.png",
+    "projectTechStack": ["Java"]
+  },
+  {
+    "projectTitle": "Cell Shader",
+    "projectDescription": "Cell Shader is an interactive webpage that allows a user to fill in a grid of cells with their desired colors to create pixel art. This was built as part of a web dev bootcamp.",
+    "projectUrl": "https://github.com/ynoTL23/Cell-Shader",
+    "projectImage": "/assets/images/cell-shader.png",
+    "projectTechStack": ["HTML", "CSS", "JavaScript"]
+  }
+]

@@ -2,11 +2,21 @@ import React from 'react'
 import '../styles/ProjectItem.css'
 
 const ProjectItem = props => {
-  const { title, description, projectUrl, image, techstack } = props.projectDetails
+  const { projectTitle, projectDescription, projectUrl, projectImage, projectTechStack } =
+    props.projectDetails
+
   return (
     <article className='card'>
-      <CardHeader image={image} />
-      <CardBody projectBody={{ title, description, projectUrl, techstack }} />
+      <CardHeader image={projectImage} />
+      <CardBody
+        projectBody={{
+          projectTitle,
+          projectDescription,
+          projectUrl,
+          projectImage,
+          projectTechStack
+        }}
+      />
     </article>
   )
 }
@@ -19,15 +29,15 @@ const CardHeader = props => {
 }
 
 const CardBody = props => {
-  const { title, description, projectUrl, techstack } = props.projectBody
+  const { projectTitle, projectDescription, projectUrl, projectTechStack } = props.projectBody
 
   return (
     <div className='card-body'>
-      <p className='tech-stack'>{techstack.join(', ')}</p>
+      <p className='tech-stack'>{projectTechStack.join(', ')}</p>
 
-      <h2>{title}</h2>
+      <h2>{projectTitle}</h2>
 
-      <p className='card-description'>{description}</p>
+      <p className='card-description'>{projectDescription}</p>
 
       <a href={projectUrl} target='blank' className='button'>
         View Project
