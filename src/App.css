@@ -43,12 +43,6 @@
   height: 100%;
 }
 
-.content-wrapper {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
-
 @media (max-width: 600px) {
   .bounds-container .line.top,
   .bounds-container .line.bottom {

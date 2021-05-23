@@ -1,13 +1,12 @@
 .projects-container {
-  margin-top: 10vh;
-}
-
-.projects-container .projects-header {
-  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .projects-container .projects-list {
-  margin-bottom: 25%;
   width: 50vw;
   max-width: 60vw;
   display: flex;
@@ -15,5 +14,5 @@
   flex-direction: row;
   justify-content: center;
   align-items: auto;
-  align-content: start;
+  align-content: flex-start;
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "workRole": "Software Engineer Intern",
+    "workCompany": "ListenFirst Media",
+    "workTimeframe": "January 2020 - May 2020",
+    "workDescription": "Assisted in resolving front-end bugs from JIRA and deploying to production. Collaborated with co-intern to build and deploy an MVP interface that provides internal staff with a tool to explore the company's content API, via valid JSON request queries against the API.",
+    "workBulletNotes": ["Researched and understood company’s internal databases and libraries", "Resolved and deployed front-end bugs to production", "Used React to wireframe, develop, and deploy an MVP interface for content-level data retrieval"]
+  },
+  {
+    "workRole": "Resident",
+    "workCompany": "CUNY 2X/Tech Talent Pipeline",
+    "workTimeframe": "January 2020 - February 2020",
+    "workDescription": "As a cohort 5 resident, I participated in a month-long web development and coding bootcamp designed to build tech career skills with languages and environments such as Git/GitHub, HTML, CSS, JavaScript, Node.js, React, PostgreSQL, and agile development. The CUNY 2X Tech Talent Pipeline is an initiative set to double the number of City University of New York (CUNY) students graduating with a tech-related bachelor’s degree.",
+    "workBulletNotes": ["Learned the fundamentals of JavaScript, Node.js, React, Express, and dabbled in PostgreSQL", "Developed 2 full stack websites showcasing the knowledge learned from the bootcamp"]
+  }
+]

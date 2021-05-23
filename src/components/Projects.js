@@ -5,18 +5,16 @@ import '../styles/Projects.css'
 
 const Projects = () => {
   return (
-    <>
-      <div className='projects-container'>
-        <div className='projects-header'>
-          <h1>Projects</h1>
-        </div>
-        <div className='projects-list'>
-          {projects.map(project => (
-            <ProjectItem projectDetails={project} />
-          ))}
-        </div>
+    <div className='projects-container'>
+      <div className='projects-header'>
+        <h1>Projects</h1>
       </div>
-    </>
+      <div className='projects-list'>
+        {projects.map(project => (
+          <ProjectItem projectDetails={project} />
+        ))}
+      </div>
+    </div>
   )
 }
 
