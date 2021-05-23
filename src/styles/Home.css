@@ -1,4 +1,5 @@
 .home-wrapper {
+  margin: 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;

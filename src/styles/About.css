@@ -25,6 +25,7 @@
 
 .about-profiles a {
   margin: 10px;
+  flex: 0 0 auto;
   color: inherit;
   text-decoration: none;
   transition: all 0.2s ease 0s;
@@ -99,4 +100,23 @@
   left: -30px;
   top: 9px;
   background: #00aeef;
+}
+
+@media (max-width: 1120px) {
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: auto;
+    align-content: center;
+  }
+  .about-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: auto;
+    align-content: start;
+  }
 }
