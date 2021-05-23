@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import experiences from '../data/experiences.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import WorkItem from './WorkItem'
 import '../styles/About.css'
 
 const About = () => {
+  const [highlightProfiles, setHighlightProfiles] = useState(false)
+
   return (
     <div className='about-wrapper'>
       <h1>About Me</h1>
       <div className='about-container'>
-        <div className='about-profiles'>
+        <div className={`about-profiles ${highlightProfiles ? 'profile-pulse' : ''}`}>
           <a href='mailto:tonylu23@gmail.com'>
             <FontAwesomeIcon icon={faEnvelope} size='2x' />
           </a>
@@ -29,7 +32,13 @@ const About = () => {
             involving classification of animal and medical data. In my free time, I love to play
             games, listen to music and learn about new developing technologies & trends. I hope to
             contribute to meaningful projects that create convenience and simplification for daily
-            lives. Feel free to get in touch with me.
+            lives.{' '}
+            <span
+              id='get-in-touch'
+              onMouseOver={() => setHighlightProfiles(true)}
+              onMouseOut={() => setHighlightProfiles(false)}>
+              Feel free to get in touch with me.
+            </span>
           </p>
         </div>
       </div>
@@ -53,26 +62,9 @@ const About = () => {
         <div className='work-section'>
           <h1 className='exp-header'>Work</h1>
 
-          {experiences.map(exp => {
-            return (
-              <div class='exp-item'>
-                <div class='exp-timeframe'>{exp.workTimeframe}</div>
-                <div class='exp-title'>
-                  {exp.workRole}, <em>{exp.workCompany}</em>
-                </div>
-                <div className='exp-notes'>
-                  {exp.workDescription}
-                  {
-                    <ul>
-                      {exp.workBulletNotes.map(note => (
-                        <li>{note}</li>
-                      ))}
-                    </ul>
-                  }
-                </div>
-              </div>
-            )
-          })}
+          {experiences.map(exp => (
+            <WorkItem exp={exp} />
+          ))}
         </div>
       </div>
     </div>
