@@ -47,9 +47,9 @@ const About = () => {
         {/* EDUCATION SECTION */}
         <div className='education-section'>
           <h1 className='exp-header'>Education</h1>
-          <div class='exp-item'>
-            <div class='exp-timeframe'>August 2017 - May 2021</div>
-            <div class='exp-title'>CUNY Herbert H. Lehman College</div>
+          <div className='exp-item'>
+            <div className='exp-timeframe'>August 2017 - May 2021</div>
+            <div className='exp-title'>CUNY Herbert H. Lehman College</div>
             <div className='exp-notes'>
               Bachelor of Science - Computer Science, <em>Magna Cum Laude</em>
               <br />
@@ -62,8 +62,8 @@ const About = () => {
         <div className='work-section'>
           <h1 className='exp-header'>Work</h1>
 
-          {experiences.map(exp => (
-            <WorkItem exp={exp} />
+          {experiences.map((exp, idx) => (
+            <WorkItem key={idx} exp={exp} />
           ))}
         </div>
       </div>

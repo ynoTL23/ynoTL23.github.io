@@ -4,17 +4,17 @@ const WorkItem = props => {
   const { workTimeframe, workRole, workCompany, workDescription, workBulletNotes } = props.exp
 
   return (
-    <div class='exp-item'>
-      <div class='exp-timeframe'>{workTimeframe}</div>
-      <div class='exp-title'>
+    <div className='exp-item'>
+      <div className='exp-timeframe'>{workTimeframe}</div>
+      <div className='exp-title'>
         {workRole}, <em>{workCompany}</em>
       </div>
       <div className='exp-notes'>
         {workDescription}
         {
           <ul>
-            {workBulletNotes.map(note => (
-              <li>{note}</li>
+            {workBulletNotes.map((note, idx) => (
+              <li key={idx}>{note}</li>
             ))}
           </ul>
         }
