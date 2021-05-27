@@ -13,7 +13,7 @@ nav ul {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: auto;
+  align-items: center;
   align-content: flex-start;
   list-style: none;
 }
@@ -30,6 +30,20 @@ nav ul li a {
   color: black;
   background: #fff;
   border: 1px solid #4c566a;
+}
+
+nav ul li .dark-mode-toggle {
+  cursor: pointer;
+}
+
+nav ul li .dark-mode-toggle:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+nav ul li .dark-mode-toggle:active {
+  transform: scale(0.9);
 }
 
 nav ul li a:hover {

@@ -3,19 +3,29 @@ import Particle from 'react-particle-animation'
 
 import '../styles/Home.css'
 
-const Home = () => {
+const darkModeParticles = {
+  color: { r: 236, g: 236, b: 244, a: 255 },
+  background: { r: 46, g: 52, b: 64, a: 255 }
+}
+
+const Home = ({ darkMode }) => {
   return (
     <div className='home-wrapper'>
       <Particle
         className='particles'
         numParticles={300}
         interactive={false}
-        color={{
-          r: 59,
-          g: 66,
-          b: 82,
-          a: 178
-        }}
+        color={
+          darkMode
+            ? darkModeParticles.color
+            : {
+                r: 59,
+                g: 66,
+                b: 82,
+                a: 255
+              }
+        }
+        background={darkMode ? darkModeParticles.background : { r: 255, g: 255, b: 255, a: 255 }}
         lineWidth={1.2}
         particleRadius={1.2}
         particleSpeed={0.3}
